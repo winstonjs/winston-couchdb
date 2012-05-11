@@ -1,0 +1,21 @@
+{
+  "name": "winston-couchdb",
+  "description": "A CouchDB transport for winston",
+  "version": "0.5.0",
+  "author": "Charlie Robbins <charlie.robbins@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/indexzero/winston-couchdb.git" 
+  },
+  "keywords": ["logging", "sysadmin", "tools", "winston", "couchdb"],
+  "dependencies": {
+    "cradle": "0.6.x"
+  },
+  "devDependencies": {
+    "winston": "0.5.x",
+    "vows": "0.6.x"
+  },
+  "main": "./lib/winston-couchdb",
+  "scripts": { "test": "vows test/*-test.js --spec" },
+  "engines": { "node": ">= 0.4.0" }
+}
