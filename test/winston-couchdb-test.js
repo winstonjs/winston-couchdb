@@ -8,15 +8,13 @@
 
 var path = require('path'),
     vows = require('vows'),
-    fs = require('fs'),
-    http = require('http'),
     assert = require('assert'),
-    winston = require('../../lib/winston'),
-    helpers = require('../helpers'),
-    transport = require('./transport');
+    helpers = require('winston/test/helpers'),
+    transport = require('winston/test/transports/transport'),
+    Couchdb = require('../lib/winston-couchdb').Couchdb;
 
 vows.describe('winston/transports/couchdb').addBatch({
-  'An instance of the Couchdb Transport': transport(winston.transports.Couchdb, {
+  'An instance of the Couchdb Transport': transport(Couchdb, {
     host: 'localhost',
     port: 5984,
     db: 'logs'
