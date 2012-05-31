@@ -1,11 +1,11 @@
 {
-  "name": "winston-couchdb",
+  "name": "winston-cradle",
   "description": "A CouchDB transport for winston",
-  "version": "0.5.0",
+  "version": "0.0.1",
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "http://github.com/indexzero/winston-couchdb.git" 
+    "url": "http://github.com/indexzero/winston-couchdb.git"
   },
   "keywords": ["logging", "sysadmin", "tools", "winston", "couchdb"],
   "dependencies": {
