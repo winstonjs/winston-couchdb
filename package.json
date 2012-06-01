@@ -1,5 +1,5 @@
 {
-  "name": "winston-cradle",
+  "name": "winston-couchdb",
   "description": "A CouchDB transport for winston",
   "version": "0.6.1",
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
