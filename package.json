@@ -12,7 +12,7 @@
     "cradle": "0.6.x"
   },
   "devDependencies": {
-    "winston": "0.5.x",
+    "winston": "0.6.x",
     "vows": "0.6.x"
   },
   "main": "./lib/winston-couchdb",
