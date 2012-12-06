@@ -9,3 +9,5 @@ services:
 notifications:
   email:
     - kdawes@gmail.com
+before_script:
+  - curl -X PUT 127.0.0.1:5984/logs
