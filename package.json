@@ -5,7 +5,7 @@
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "http://github.com/kdawes/winston-couchdb.git"
+    "url": "https://github.com/indexzero/winston-couchdb"
   },
   "keywords": ["logging", "sysadmin", "tools", "winston", "couchdb"],
   "dependencies": {
