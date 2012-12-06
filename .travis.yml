@@ -4,7 +4,8 @@ branches:
     - master
 node_js:
   - 0.8
-
+services:
+  - couchdb
 notifications:
   email:
     - kdawes@gmail.com
