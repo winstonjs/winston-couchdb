@@ -1,0 +1,13 @@
+language: node_js
+branches:
+  only:
+    - master
+node_js:
+  - 0.8
+services:
+  - couchdb
+notifications:
+  email:
+    - charlie.robbins@gmail.com
+before_script:
+  - curl -X PUT 127.0.0.1:5984/logs
