@@ -14,6 +14,6 @@ vows.describe('winston/transports/couchdb').addBatch({
   'An instance of the Couchdb Transport': transport(Couchdb, {
     host: 'localhost',
     port: 5984,
-    db: 'logs'
+    db: 'winston-couch-test'
   })
 }).export(module);
