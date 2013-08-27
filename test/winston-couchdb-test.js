@@ -6,10 +6,7 @@
  *
  */
 
-var path = require('path'),
-    vows = require('vows'),
-    assert = require('assert'),
-    helpers = require('winston/test/helpers'),
+var vows = require('vows'),
     transport = require('winston/test/transports/transport'),
     Couchdb = require('../lib/winston-couchdb').Couchdb;
 
