@@ -1,23 +1,37 @@
 {
   "name": "winston-couchdb",
   "description": "A CouchDB transport for Winston",
-  "version": "0.6.3",
+  "version": "0.7.0",
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
+  "contributors": [
+    "Martin Rudolph <DoomyTheFroomy@users.noreply.github.com>"
+  ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/indexzero/winston-couchdb"
+    "url": "http://github.com/winstonjs/winston-couchdb"
   },
-  "keywords": ["logging", "sysadmin", "tools", "winston", "couchdb"],
+  "keywords": [
+    "logging",
+    "sysadmin",
+    "tools",
+    "winston",
+    "couchdb"
+  ],
   "license": "MIT",
   "dependencies": {
-    "cradle": "0.6.x",
-    "cycle": "1.0.x"
-  },
-  "devDependencies": {
-    "winston": "0.6.x",
-    "vows": "0.6.x"
+    "nano": "^10.0.0",
+    "winston": "^3.8.1"
   },
   "main": "./lib/winston-couchdb",
-  "scripts": { "test": "vows test/*-test.js --spec" },
-  "engines": { "node": ">= 0.8.0" }
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "devDependencies": {
+    "abstract-winston-transport": "^0.5.1",
+    "mocha": "^10.0.0",
+    "standard": "^17.0.0"
+  }
 }

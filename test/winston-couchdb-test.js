@@ -1,19 +1,15 @@
-/*
- * couchdb-test.js: Tests for instances of the Couchdb transport
- *
- * (C) 2011 Max Ogden
- * MIT LICENSE
- *
+/**
+ * @todo add pouchdb for local testing
  */
 
-var vows = require('vows'),
-    transport = require('winston/test/transports/transport'),
-    Couchdb = require('../lib/winston-couchdb').Couchdb;
-
-vows.describe('winston/transports/couchdb').addBatch({
-  'An instance of the Couchdb Transport': transport(Couchdb, {
-    host: 'localhost',
-    port: 5984,
-    db: 'winston-couch-test'
-  })
-}).export(module);
+require('abstract-winston-transport')({
+  name: 'CouchDB',
+  Transport: require('../lib/winston-couchdb'),
+  construct: {
+    url: 'http://username:password09@127.0.0.1:5984',
+    db: 'winston-test'
+  }
+  // Not sure if these are still necessary, the general tests case are not implemented, yet
+  // query: true,
+  // stream: true
+})
